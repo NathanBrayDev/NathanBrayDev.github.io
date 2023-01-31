@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+
+header{
+  background-color: black;
+  color: white;
+}
+
+h1{
+  font-size:5vw;
+}
+
+label.logo{
+  font-size:35px;
+  line-height: 15vh;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+nav ul{
+  float:right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display:inline-block;
+  line-height: 15vh;
+  max-height: 15vh;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color:white;
+  font-size:2em;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+a.active, a:hover{
+  background: #99E2FF;
+  transition: .5s;
+}
+
+.checkbtn{
+  font-size: 35px;
+  color:white;
+  float: right;
+  cursor: pointer;
+  display:none;
+}
+
+.imageContainer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height:90vh;
+  width:100%;
+  margin:0px;
+    overflow-y:auto;
+}
+
+.sideText{
+  width:50%;
+  color:white;
+  font-size:3vw;
+  text-align: left;
+  margin-left:5vw;
+  padding:3vw;
+  display:block;
+}
+
+.sideImage{
+  width:auto;
+  height:90%;
+  border-radius: 75px;
+  max-height: 80%;
+  max-width: 50%;
+  margin-right:5vw;
+
+}
+
+#check{
+  display: none;
+}
+
+#myProjectsBtn{
+  padding:1vh 5vw;
+  border-radius: 10px;
+  border:5px;
+  margin:3vw 0 0 0;
+  font-size: 2vw;
+  color:white;
+  display:block;
+  cursor: pointer;
+  background-color: #4794B3;
+}
+
+
+body {
+  margin:0px;
+  padding:0px;
+  background:#333535;
+}
+
+
+footer{
+  background: black ;
+  color: white;
+  line-height: 80px;
+}
+
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 15px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+  .imageContainer{
+    height:40vh;
+
+  }
+
+  .sideText{
+    height:50%;
+  }
+
+  .checkbtn{
+    display:block;
+    line-height: 15vh;
+    margin-right:40px;
+  }
+  ul{
+    position: fixed;
+    width:100%;
+    height:100vh;
+    background:black;
+    left:0;
+    text-align: center;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover, a.active{
+    background:none;
+    color: blue;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+}
