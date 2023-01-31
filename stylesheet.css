@@ -53,6 +53,14 @@ a.active, a:hover{
 #check{
   display: none;
 }
+.sideText{
+  width:50vw;
+  padding:100px;
+}
+
+img{
+  border-radius: :50%;
+}
 
 @media (max-width: 952px){
   label.logo{
