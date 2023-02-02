@@ -8,8 +8,8 @@
 
 
 header{
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 h1{
@@ -21,6 +21,13 @@ label.logo{
   line-height: 15vh;
   font-weight: bold;
   padding-left: 20px;
+  text-decoration: none;
+  color:black;
+}
+
+.logo:hover{
+  font-size:40px;
+  cursor: pointer;
 }
 
 nav ul{
@@ -36,38 +43,34 @@ nav ul li{
 }
 
 nav ul li a {
-  color:white;
+  color:black;
   font-size:2em;
   padding: 7px 13px;
   border-radius: 3px;
 }
 
-a.active, a:hover{
+ .nav:active, .nav:hover{
   background: #99E2FF;
-  transition: .5s;
 }
 
 .checkbtn{
   font-size: 35px;
-  color:white;
+  color:black;
   float: right;
   cursor: pointer;
   display:none;
 }
 
 .imageContainer{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height:90vh;
+  height:80vh;
   width:100%;
   margin:0px;
-    overflow-y:auto;
+  overflow-y:auto;
 }
 
 .sideText{
   width:50%;
-  color:white;
+  color:black;
   font-size:3vw;
   text-align: left;
   margin-left:5vw;
@@ -76,12 +79,9 @@ a.active, a:hover{
 }
 
 .sideImage{
-  width:auto;
-  height:90%;
   border-radius: 75px;
   max-height: 80%;
   max-width: 50%;
-  margin-right:5vw;
 
 }
 
@@ -89,15 +89,66 @@ a.active, a:hover{
   display: none;
 }
 
-#myProjectsBtn{
+
+.horizontalImage{
+  max-height: 80%;
+  max-width: 80%;
+  margin-right:5vw;
+}
+
+.verticalImage{
+  max-height: 40vh;
+  max-width: 50%;
+}
+
+
+.horizontal{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vertical{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding:2vw;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto ;
+  padding:1vh;
+}
+.grid-item {
+  font-size: 30px;
+  max-width: 95%;
+  padding:1vh;
+  margin:auto;
+}
+
+#aboutMeBtn{
   padding:1vh 5vw;
   border-radius: 10px;
   border:5px;
-  margin:3vw 0 0 0;
   font-size: 2vw;
   color:white;
   display:block;
   cursor: pointer;
+    margin:3vw 0 0 0;
+  background-color: #4794B3;
+}
+
+#myProjectsBtn{
+  padding:1vh 5vw;
+  border-radius: 10px;
+  border:5px;
+  font-size: 2vw;
+  color:white;
+  display:block;
+  cursor: pointer;
+  margin:2vw auto 1vw auto;
   background-color: #4794B3;
 }
 
@@ -105,7 +156,7 @@ a.active, a:hover{
 body {
   margin:0px;
   padding:0px;
-  background:#333535;
+  background:white;
 }
 
 
@@ -124,13 +175,18 @@ footer{
   nav ul li a {
     font-size: 16px;
   }
+
   .imageContainer{
     height:40vh;
-
   }
 
   .sideText{
-    height:50%;
+    height:20vh;
+  }
+
+  .sideImage{
+      max-height: 30vh;
+      border-radius:25px;
   }
 
   .checkbtn{
@@ -138,6 +194,13 @@ footer{
     line-height: 15vh;
     margin-right:40px;
   }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding:1vh;
+  }
+
   ul{
     position: fixed;
     width:100%;
@@ -156,6 +219,7 @@ footer{
   }
   nav ul li a{
     font-size: 20px;
+    color:white;
   }
   a:hover, a.active{
     background:none;
