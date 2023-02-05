@@ -2,14 +2,13 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  list-style: none;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    box-sizing:border-box
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  box-sizing:border-box
 }
 
 
 header{
-  background-color: black;
+  background-color:white;
   color: white;
 
 }
@@ -18,25 +17,29 @@ h1{
   font-size:4vw;
 }
 
+h2{
+  font-size:5vh;
+  text-align: center;
+  margin: 3vh 3vh 0 3vh;
+}
+
+h3{
+  margin: 3vh 0;
+}
+
 body {
   margin:0px;
   padding:0px;
-  background:#535f80;
+  background:white;
 }
 
-
-footer{
-  background: black ;
-  color: white;
-  line-height: 80px;
-}
 
 label.logo{
   font-size:35px;
   line-height: 15vh;
   font-weight: bold;
   padding-left: 20px;
-  color:#FEFEFE;
+  color:black;
 }
 
 .logo:hover{
@@ -49,6 +52,11 @@ nav ul{
   margin-right: 20px;
 }
 
+ol{
+  list-style-type: circle;
+  margin-left: 25px;
+}
+
 nav ul li{
   display:inline-block;
   line-height: 15vh;
@@ -57,20 +65,45 @@ nav ul li{
 }
 
 nav ul li a {
-  color:white;
+  color:black;
   font-size:2em;
   padding: 7px 13px;
   border-radius: 3px;
 }
 
+footer{
+  background: black ;
+  color: white;
+}
+
+footer ul{
+  margin:auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer ul li{
+  line-height: 10vh;
+  max-height: 10vh;
+  margin: 0 5px;
+  list-style-type: none;
+}
+
+footer ul li a {
+  color:white;
+  font-size:1em;
+  border-radius: 3px;
+}
+
  .active, .nav:hover{
-  background: #99E2FF;
+    background: #99E2FF;
     font-size:2em;
 }
 
 .checkbtn{
   font-size: 35px;
-  color:white;
+  color:black;
   float: right;
   cursor: pointer;
   display:none;
@@ -123,6 +156,11 @@ nav ul li a {
   display: none;
 }
 
+#projectTextContainer{
+  padding:0 3vw;
+  margin-bottom: 5vh;
+}
+
 
 .horizontalImage{
   max-height: 50vh;
@@ -140,16 +178,11 @@ nav ul li a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #E7E9F0;
-}
-
-h3{
-  padding:10px;
+  background: #99E2FF;
 }
 
 .projectText{
   font-size:1em;
-  padding:5px;
 }
 
 .vertical{
@@ -163,13 +196,15 @@ h3{
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
-  padding:1vh;
+  margin:auto;
+  padding:1vw;
 }
 .grid-item {
   font-size: 30px;
-  max-width: 100%;
-  padding:1vh;
-  margin:auto;
+  height:25vw;
+  width:100%;
+  padding:5px;
+  border-radius: 12px;
 }
 
 #aboutMeBtn{
@@ -231,7 +266,11 @@ h3{
     padding:1vh;
   }
 
-  ul{
+  .grid-item {
+      height:50vw;
+  }
+
+  nav ul{
     position: fixed;
     width:100%;
     height:100vh;
@@ -241,7 +280,7 @@ h3{
     left: -100%;
     text-align: center;
     transition: all .5s;
-      z-index: 1000;
+    z-index: 1000;
   }
   nav ul li{
     display: block;
@@ -258,6 +297,10 @@ h3{
 
   #check:checked ~ ul{
     left: 0;
+  }
+
+  h3{
+    margin: 1vh 0;
   }
 
 }
