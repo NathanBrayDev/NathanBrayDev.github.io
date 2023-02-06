@@ -6,15 +6,12 @@
   box-sizing:border-box
 }
 
-
-header{
-  background-color:white;
-  color: white;
-
+hr{
+  margin:1vh 0;
 }
 
 h1{
-  font-size:4vw;
+  font-size:3em;
 }
 
 h2{
@@ -29,8 +26,8 @@ h3{
 
 body {
   margin:0px;
-  padding:0px;
   background:white;
+  padding:0 10vw;
 }
 
 
@@ -42,9 +39,45 @@ label.logo{
   color:black;
 }
 
-.logo:hover{
-  font-size:40px;
+.logo:hover, button:hover{
+  color:blue;
   cursor: pointer;
+}
+
+.hoverTextRed, .hoverTextOrange, .hoverTextYellow, .hoverTextGreen, .hoverTextBlue, .hoverTextPurple, .hoverTextViolet{
+  font-size: 4em;
+}
+
+.hoverTextRed:hover{
+  color:red;
+}
+
+.hoverTextOrange:hover{
+  color:orange;
+}
+
+.hoverTextYellow:hover{
+  color:yellow;
+}
+
+.hoverTextGreen:hover{
+  color:green;
+}
+
+.hoverTextBlue:hover{
+  color:blue;
+}
+
+.hoverTextPurple:hover{
+  color:purple;
+}
+
+.hoverTextViolet:hover{
+  color:violet;
+}
+
+.paragraphText{
+  font-size: 1.5em;
 }
 
 nav ul{
@@ -71,11 +104,6 @@ nav ul li a {
   border-radius: 3px;
 }
 
-footer{
-  background: black ;
-  color: white;
-}
-
 footer ul{
   margin:auto;
   display: flex;
@@ -86,19 +114,19 @@ footer ul{
 footer ul li{
   line-height: 10vh;
   max-height: 10vh;
-  margin: 0 5px;
+  margin: 0 3vw;
   list-style-type: none;
 }
 
 footer ul li a {
-  color:white;
+  color:black;
   font-size:1em;
   border-radius: 3px;
 }
 
  .active, .nav:hover{
     background: #99E2FF;
-    font-size:2em;
+    color:blue;
 }
 
 .checkbtn{
@@ -113,32 +141,34 @@ footer ul li a {
   width:100%;
   margin:0px;
   overflow-y:auto;
-  height:70vh;
+  height:30vw;
   padding:2vw;
+  background-color: #99E2FF;
 }
 
 .sideText{
-  width:50%;
+  max-width:50%;
   color:black;
-  font-size:2vw;
+  font-size:1em;
   text-align: left;
-  margin-left:5vw;
-  padding:3vw;
   display:block;
+  margin: 2vh 0;
+  text-align: center;
 }
 
 .sideImage{
-  border-radius: 75px;
   max-height: 80%;
   max-width: 50%;
+  border-radius: 15px;
+  margin:2vh;
 }
 
 .standaloneText{
   width:100%;
   color:black;
-  font-size:2vw;
+  font-size:1em;
   text-align: left;
-  padding:1vh 30vw;
+  padding:1vh 10vw;
   display:block;
   text-align: center;
 }
@@ -157,7 +187,7 @@ footer ul li a {
 }
 
 #projectTextContainer{
-  padding:0 3vw;
+  padding:0 5vw;
   margin-bottom: 5vh;
 }
 
@@ -165,7 +195,6 @@ footer ul li a {
 .horizontalImage{
   max-height: 50vh;
   max-width: 30vw;
-  margin-right:5vw;
 }
 
 .verticalImage{
@@ -177,9 +206,21 @@ footer ul li a {
 .horizontal{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background: #99E2FF;
+  justify-content:center;
 }
+
+  #aboutPage{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-height: 70vh;
+  }
+
+  #contactPage{
+    margin:auto;
+    width:80%;
+    height:70vh;
+  }
 
 .projectText{
   font-size:1em;
@@ -197,41 +238,40 @@ footer ul li a {
   display: grid;
   grid-template-columns: auto auto;
   margin:auto;
-  padding:1vw;
 }
 .grid-item {
   font-size: 30px;
-  height:25vw;
+  height:40vh;
   width:100%;
   padding:5px;
   border-radius: 12px;
 }
 
-#aboutMeBtn{
-  padding:1vh 5vw;
+.hyperlinkButtons{
+  padding:2vh 5vw;
   border-radius: 10px;
-  border:5px;
-  font-size: 2vw;
+  border:0px;
+  font-size: 2em;
   color:white;
   display:block;
   cursor: pointer;
-    margin:3vw 0 0 0;
+  margin:3vh 0;
   background-color: #4794B3;
 }
 
-#myProjectsBtn{
-  padding:1vh 5vw;
-  border-radius: 10px;
-  border:5px;
-  font-size: 2vw;
-  color:white;
-  display:block;
-  cursor: pointer;
-  margin:2vw auto 1vw auto;
-  background-color: #4794B3;
+#center{
+    margin:3vh auto;
+}
+
+#left{
+    margin:3vh 0;
 }
 
 @media (max-width: 952px){
+body{
+    padding:0;
+}
+
   label.logo{
     font-size: 30px;
     padding-left: 15px;
@@ -242,16 +282,37 @@ footer ul li a {
   }
 
   .imageContainer{
-    height:30vh;
+    height:80vh;
+    padding:0vh 0 0 0;
   }
 
   .sideText{
     height:20vh;
+    font-size: 10px;
+    max-width: 80%;
+  }
+
+  #left{
+    margin:3vh auto;
+  }
+
+  .horizontal{
+    flex-direction: column-reverse;
+    justify-content:flex-end;
+  }
+
+  #aboutPage{
+    flex-direction: column-reverse;
+    margin: 5vh 0;
+    justify-content:flex-end;
+    height:100vh;
   }
 
   .sideImage{
-      max-height: 30vh;
+      max-height: 40vh;
       border-radius:25px;
+      width:auto;
+      max-width: 80%;
   }
 
   .checkbtn{
