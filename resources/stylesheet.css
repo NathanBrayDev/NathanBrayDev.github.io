@@ -18,7 +18,7 @@ h1 {
 h2 {
   font-size: 5vh;
   text-align: center;
-  margin: 3vh 3vh 0 3vh;
+  margin: 2vh 0;
 }
 
 h3 {
@@ -32,7 +32,7 @@ body {
 }
 
 label.logo {
-  font-size: 35px;
+  font-size: 10vh;
   line-height: 15vh;
   font-weight: bold;
   padding-left: 20px;
@@ -49,7 +49,7 @@ footer {
 }
 
 .logo:hover, button:hover {
-  color: white;
+  color: #99E2FF;
   cursor: pointer;
 }
 
@@ -105,7 +105,7 @@ nav ul li {
 
 nav ul li a {
   color: white;
-  font-size: 2em;
+  font-size: 1.5vw;
   padding: 7px 13px;
   border-radius: 3px;
 }
@@ -120,19 +120,19 @@ footer ul {
 footer ul li {
   line-height: 10vh;
   max-height: 10vh;
-  margin: 0 2vw;
+  margin: 0 1vw;
   list-style-type: none;
 }
 
 footer ul li a {
-  color: black;
+  color: white  ;
   font-size: 1em;
   border-radius: 3px;
   padding: 5px;
-  background-color: white;
+  background-color: transparent;
 }
 
-.active, .nav:hover, .hyperlinkButtons:hover {
+.active, .nav:hover, .hyperlinkButtons:hover, footer ul li a:hover{
   background:#99E2FF;
   color: #2c3840;
 }
@@ -148,9 +148,7 @@ footer ul li a {
 .imageContainer {
   width: 100%;
   margin: 0px;
-  overflow-y: auto;
-  height: 70vh;
-  padding: 1vh;
+  padding: 3vh 0;
 }
 
 .sideText {
@@ -173,9 +171,9 @@ footer ul li a {
 .standaloneText {
   width: 100%;
   color: white;
-  font-size: 1em;
+  font-size: 1.5em;
   text-align: left;
-  padding: 1vh 10vw;
+  padding: 1vh 5vw;
   display: block;
   text-align: center;
 }
@@ -183,7 +181,10 @@ footer ul li a {
 .toggleTextButton {
   width: 100%;
   margin: 1vh 0;
-  padding: 5px;
+  padding: 7px 0;
+  background: black;
+  border-radius: 5px;
+  border-color: #2C3333;
 }
 
 .projectText {
@@ -207,6 +208,10 @@ footer ul li a {
 #projectTextContainer {
   padding: 0 5vw;
   margin-bottom: 5vh;
+}
+
+{
+  height:1vh;
 }
 
 .horizontalImage {
@@ -290,7 +295,7 @@ footer ul li a {
   }
 
   label.logo {
-    font-size: 30px;
+    font-size: 5vh;
     padding-left: 15px;
   }
 
