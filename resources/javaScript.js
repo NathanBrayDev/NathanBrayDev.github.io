@@ -28,3 +28,12 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " current";
 }
+
+function ToggleVisibility(divClass)
+{
+    var els = document.getElementsByClassName(divClass);
+    for(var i = 0; i < els.length; i++)
+    {
+        els[i].style.display = els[i].style.display == "block" ? "none" : "block";
+    }
+}
