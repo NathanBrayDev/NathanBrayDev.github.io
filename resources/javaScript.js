@@ -39,13 +39,17 @@ function ToggleVisibility(textDivClass, buttonDivClass) {
     els[i].style.display = els[i].style.display == "none" ? "block" : "none";
   }
   var button = document.getElementById(buttonDivClass);
-  if (button.style.color != "white") {
-    button.style.color = "white";
-    button.style.backgroundColor = "#8B0000";
-    button.style.padding = "3vh 0";
+  if (button.style.fontWeight != "bold") {
+    button.style.color = "black";
+    let text = "< " + buttonDivClass + " >";
+    button.textContent = text;
+    button.style.backgroundColor = "#99E2FF";
+    button.style.fontWeight = "bold";
   } else {
     button.style.color = "black";
     button.style.backgroundColor = "white";
-    button.style.padding = "1vh 0";
+    let text = "> " + buttonDivClass + " <";
+    button.textContent = text;
+    button.style.fontWeight = "normal";
   }
 }

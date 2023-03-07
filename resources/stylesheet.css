@@ -1,3 +1,5 @@
+
+
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,10 @@
   font-family: 'Helvetica', 'Arial', sans-serif;
   box-sizing: border-box;
   color:white;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 hr {
@@ -18,7 +24,7 @@ h1 {
 h2 {
   font-size: 5vh;
   text-align: center;
-  margin: 2vh 0;
+  margin: 5vh 0;
 }
 
 h3 {
@@ -187,12 +193,12 @@ footer ul li a {
   border-color: #2C3333;
   color:black;
   font-size: 1.5em;
+  transition: all .3s linear;
 }
 
 .toggleTextButton:hover {
   color:black;
   font-size: 1.6em;
-  font-weight: bold;
 }
 
 
@@ -251,13 +257,13 @@ footer ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 80vh;
+  margin:5vh;
 }
 
-#contactPage {
+#skillsPage {
   margin: auto;
+  min-height: 70vh;
   width: 80%;
-  height: 80vh;
 }
 
 .grid-container {
@@ -318,7 +324,6 @@ footer ul li a {
   }
 
   .sideText {
-    height: 20vh;
     font-size: 10px;
     max-width: 80%;
   }
@@ -339,9 +344,8 @@ footer ul li a {
 
   #aboutPage {
     flex-direction: column-reverse;
-    margin: 5vh 0;
+    margin: 3vh 0;
     justify-content: flex-end;
-    height: 100vh;
   }
 
   .sideImage {
