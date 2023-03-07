@@ -180,16 +180,25 @@ footer ul li a {
 
 .toggleTextButton {
   width: 100%;
-  margin: 1vh 0;
-  padding: 7px 0;
-  background: black;
-  border-radius: 5px;
+  margin: 3vh 0;
+  padding: 1vh 0;
+  background: white;
+  border-radius: 10px;
   border-color: #2C3333;
+  color:black;
+  font-size: 1.5em;
 }
+
+.toggleTextButton:hover {
+  color:black;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
 
 .projectText {
   font-size: 1em;
-  display: none;
+  display: block;
 }
 
 .standaloneImage {
@@ -312,6 +321,11 @@ footer ul li a {
     height: 20vh;
     font-size: 10px;
     max-width: 80%;
+  }
+
+  .toggleTextButton:hover {
+    font-size: 1.5em;
+    font-weight:normal;
   }
 
   #left {
