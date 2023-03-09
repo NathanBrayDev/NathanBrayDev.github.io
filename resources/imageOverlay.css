@@ -20,11 +20,9 @@
   transition: .5s ease;
 }
 
-
-
 .text {
   color: white;
-  font-size: 2em;
+  font-size: 1em;
   position: absolute;
   top: 40%;
   left: 50%;
@@ -41,7 +39,8 @@
   }
 
   .text{
-      top: 50%;
+    top: 50%;
+    font-size: 2em;
   }
 
   .container:hover .overlay {
