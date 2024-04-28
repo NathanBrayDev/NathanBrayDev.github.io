@@ -8,7 +8,7 @@ class Footer extends HTMLElement {
 <footer>
 <ul>
   <li><a href="/index">Home</a></li>
-  <li><a href="/contact" class="active">Skills</a></li>
+  <li><a href="/contact">Skills</a></li>
   <li><a href="/projects">Projects</a></li>
   <li><a href="/aboutMe">About me</a></li>
   <li><a href="mailto:nathanbray.dev@gmail.com">&#9993;</a></li>
