@@ -7,25 +7,16 @@
   <title>Nathan Bray's Portfolio</title>
   <link rel="stylesheet" href="resources/stylesheet.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <script src="components\header.js" type="text/javascript" defer></script>
+  <script src="components\footer.js" type="text/javascript" defer></script>
+
 </head>
+
 <body>
-  <header>
-    <nav>
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fa fa-bars"></i>
-      </label>
-      <a href="index.html"><label class="logo">Nathan Bray</label></a>
-      <ul>
-        <li><a class="nav" href="index.html">Home</a></li>
-        <li><a class="active nav" href="skills.html">Skills</a></li>
-        <li><a class="nav" href="projects.html">Projects</a></li>
-        <li><a class="nav" href="aboutMe.html">About me</a></li>
-        <li><a class="nav"  href="mailto:nathanbray.dev@gmail.com">&#9993;</a></li>
-        <li><a class="nav"  href="https://www.linkedin.com/in/nathan-bray-5067a5168/">in</a></li>
-      </ul>
-    </nav>
-  </header>
+
+  <header-component></header-component>
+
   <main>
     <div id="skillsPage">
       <h2>Skills</h2>
@@ -73,15 +64,8 @@
       </div>
     </div>
   </main>
-  <footer>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="skills.html" class="active">Skills</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="aboutMe.html">About me</a></li>
-      <li><a href="mailto:nathanbray.dev@gmail.com">&#9993;</a></li>
-      <li><a href="https://www.linkedin.com/in/nathan-bray-5067a5168/">in</a></li>
-    </ul>
-  </footer>
+
+  <footer-component></footer-component>
+  
 </body>
 </html>

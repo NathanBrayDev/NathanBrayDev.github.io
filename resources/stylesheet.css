@@ -6,7 +6,7 @@
   text-decoration: none;
   font-family: 'Helvetica', 'Arial', sans-serif;
   box-sizing: border-box;
-  color:white;
+  color:rgb(0, 0, 0);
 }
 
 html{
@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-  font-size: 7vh;
+  font-size: 3em;
   text-align: center;
   margin: 5vh 0;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -36,13 +36,13 @@ h4{
   margin: 0 0 20px 0;
   padding:3vh 0;
   font-size: 1.5em;
-  color:#2C3333;
-  background: white;
+  color:white;
+  background: rgb(0, 0, 0);
 }
 
 body {
   margin: 0px;
-  background: #395B64;
+  background: #ffffff;
   padding: 0vw;
 }
 
@@ -51,16 +51,16 @@ label.logo {
   line-height: 15vh;
   font-weight: bold;
   padding-left: 20px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 header {
-  background-color: #2C3333;
+  background-color: #ffffff;
 
 }
 
 footer {
-  background-color: #2C3333;
+  background-color: #ffffff;
 }
 
 .logo:hover, button:hover {
@@ -119,7 +119,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1.5vw;
   padding: 7px 13px;
   border-radius: 3px;
@@ -140,7 +140,7 @@ footer ul li {
 }
 
 footer ul li a {
-  color: white  ;
+  color: black;
   font-size: 1em;
   border-radius: 3px;
   padding: 5px;
@@ -149,7 +149,7 @@ footer ul li a {
 
 .active, .nav:hover, .hyperlinkButtons:hover, footer ul li a:hover{
   background:#99E2FF;
-  color: #2c3840;
+  color: #ffffff;
 }
 
 .checkbtn {
@@ -167,8 +167,8 @@ footer ul li a {
 }
 
 .sideText {
-  max-width: 50%;
-  color: white;
+  max-width: 30%;
+  color: rgb(0, 0, 0);
   font-size: 1em;
   text-align: left;
   display: block;
@@ -185,7 +185,7 @@ footer ul li a {
 
 .standaloneText {
   width: 100%;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 1.5em;
   text-align: left;
   padding: 1vh 5vw;
@@ -253,14 +253,10 @@ footer ul li a {
 .skillsList li{
   list-style-type: none;
   font-size: 1.3em;
-  color:white;
+  color:rgb(0, 0, 0);
   margin:1vh 0;
 }
 
-
-{
-  height:1vh;
-}
 
 .horizontalImage {
   max-height: 50vh;
@@ -276,7 +272,7 @@ footer ul li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2C3333;
+  background-color: #ffffff;
 }
 
 .vertical {
@@ -359,6 +355,7 @@ footer ul li a {
   .sideText {
     font-size: 10px;
     max-width: 80%;
+    font-size: 1em;
   }
 
   .toggleTextButton:hover {
@@ -377,7 +374,7 @@ footer ul li a {
 
   #aboutPage {
     flex-direction: column-reverse;
-    margin: 3vh 0;
+    margin: 6vh 0;
     justify-content: flex-end;
   }
 
